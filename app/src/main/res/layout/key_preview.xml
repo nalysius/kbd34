@@ -4,5 +4,4 @@
     android:textColor="@color/colorPrimary"
     android:textAlignment="center"
     android:textSize="30sp">
-
 </TextView>

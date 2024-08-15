@@ -31,7 +31,6 @@ public class Kbd34InputMethodService extends InputMethodService implements Keybo
             switch(primaryCode) {
                 case Keyboard.KEYCODE_DELETE :
                     CharSequence selectedText = inputConnection.getSelectedText(0);
-
                     if (TextUtils.isEmpty(selectedText)) {
                         inputConnection.deleteSurroundingText(1, 0);
                     } else {
@@ -44,18 +43,15 @@ public class Kbd34InputMethodService extends InputMethodService implements Keybo
                     break;
                 case Keyboard.KEYCODE_DONE:
                     inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
-
                     break;
                 default :
                     char code = (char) primaryCode;
                     if(Character.isLetter(code) && caps){
-                        code = Character.toUpperCase(code);
+                        //code = Character.toUpperCase(code);
                     }
                     inputConnection.commitText(String.valueOf(code), 1);
-
             }
         }
-
     }
 
     public Kbd34InputMethodService() {
