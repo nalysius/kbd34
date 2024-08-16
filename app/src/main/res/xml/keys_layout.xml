@@ -9,11 +9,12 @@
     >
     <Row>
         <!--
-        TODO: add comma (44) at the beginning
+        TODO: add comma (44) at the beginning.
+        TODO: 0 should be on its own key.
         point,single quote,double quote,minus,plus,
-        underscore,at,percent,dollar,1
+        underscore,at,percent,dollar,1,0
         -->
-        <Key android:codes="46,39,34,45,43,61,95,64,37,36,49" android:keyLabel="1" android:keyEdgeFlags="left"/>
+        <Key android:codes="46,39,34,45,43,61,95,64,37,36,49,48" android:keyLabel="1" android:keyEdgeFlags="left"/>
         <!--
         a,b,c,ç,U+010D,2
         -->
@@ -49,10 +50,10 @@
         <!--
         w,x,y,z,9
         -->
-        <Key android:codes="119,120,121,57" android:keyLabel="9"/>
+        <Key android:codes="119,120,121,122,57" android:keyLabel="9"/>
     </Row>
     <Row>
-        <Key android:codes="48" android:keyLabel="CAPS" android:keyEdgeFlags="left"/>
+        <Key android:codes="-1" android:keyLabel="CAPS" android:keyEdgeFlags="left"/>
         <Key android:codes="32" android:keyLabel="0" android:isRepeatable="true"/>
         <Key android:codes="-5" android:keyLabel="DEL" android:isRepeatable="true" android:keyEdgeFlags="right"/>
     </Row>

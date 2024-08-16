@@ -36,6 +36,7 @@ public class Kbd34InputMethodService extends InputMethodService implements Keybo
                     } else {
                         inputConnection.commitText("", 1);
                     }
+                    break;
                 case Keyboard.KEYCODE_SHIFT:
                     caps = !caps;
                     keyboard.setShifted(caps);
@@ -47,9 +48,10 @@ public class Kbd34InputMethodService extends InputMethodService implements Keybo
                 default :
                     char code = (char) primaryCode;
                     if(Character.isLetter(code) && caps){
-                        //code = Character.toUpperCase(code);
+                        code = Character.toUpperCase(code);
                     }
                     inputConnection.commitText(String.valueOf(code), 1);
+                    break;
             }
         }
     }
