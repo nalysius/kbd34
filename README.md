@@ -113,6 +113,12 @@ moment they are only remarks & ideas to remember.
    so it's necessary to compute the combination for all known words when a keyboard is
    enabled, and the shortcuts are available in completion only when the corresponding
    keyboard is enabled.
+10. A system of "layers" could be useful in the configuration. The default layer
+    would contain the keys displayed by default (the keyboard with the chars, as
+	usual), but another layer "special characters" could be defined in the JSON file,
+	and be activated by pressing a key. Another layer could be here for emojis, etc.
+	Built-in layers could be implemented, especially for special chars & emoji, so it's
+	not needed to define them in each JSON file.
 
 
 ## License
